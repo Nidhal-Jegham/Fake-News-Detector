@@ -32,11 +32,6 @@ def manual_testing(news):
     return new_df
 
 
-
-
-
-
-
 port_stemmer= PorterStemmer()
 
 nltk.download('stopwords')
@@ -74,19 +69,15 @@ def perform_manual_testing():
     text = entry.get()
     # Call the manual_testing function with the text
     result = man_testing(text)
-    # Display the result below the button
-    #result_label.config(text=result)
 
 root = ctk.CTk()
-root.geometry("2800 x 1480")  # Corrected geometry dimensions
+root.geometry("2800 x 1480")  
 root.title("Fake News Detector")
 
-# Set dark red and black theme colors
-bg_color = "#660606"  # Dark red background
-fg_color = "#000000"  # Black text color
-button_color = "#800000"  # Dark red button color
+bg_color = "#660606" 
+fg_color = "#000000"  
+button_color = "#800000"  
 
-# Set font size
 font_size = 14
 
 
